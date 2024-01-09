@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Display Serial Number</title>
+  <style>
+    body {
+      font-family: 'Courier New', monospace;
+      text-align: center;
+      margin-top: 100px;
+      font-size: 3em;
+    }
+  </style>
+</head>
+<body>
+  <div id="displaySerialNum"></div>
+
+  <script>
+    // Function to get query string parameter by name
+    function getParameterByName(name, url) {
+      if (!url) url = window.location.href;
+      name = name.replace(/[\[\]]/g, '\\$&');
+      var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+          results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+
+    // Get the 'serialnum' value from the query string
+    var serialNumValue = getParameterByName('serialnum');
+
+    // Display the 'serialnum' value in the HTML element
+    var displaySerialNumElement = document.getElementById('displaySerialNum');
+    if (serialNumValue) {
+      displaySerialNumElement.textContent = 'Serial Number: ' + serialNumValue;
+    } else {
+      displaySerialNumElement.textContent = 'Serial Number: No serial number parameter found';
+    }
+  </script>
+</body>
+</html>
