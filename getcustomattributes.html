@@ -26,7 +26,7 @@
       return decodeURIComponent(results[2].replace(/\+/g, ' '));
     }
 
-    // Get the values of 'serialnum', 'enrolledby', 'property', 'role', 'name', 'model', 'phonenum', and 'udid' from the query string
+    // Get the values of 'serialnum', 'enrolledby', 'property', 'role', 'name', 'model', 'phonenum', 'udid', and 'wifimac' from the query string
     var serialNumValue = getParameterByName('serialnum');
     var enrolledByValue = getParameterByName('enrolledby');
     var propertyValue = getParameterByName('property');
@@ -35,6 +35,7 @@
     var modelValue = getParameterByName('model');
     var phoneNumValue = getParameterByName('phonenum');
     var udidValue = getParameterByName('udid');
+    var wifiMacValue = getParameterByName('wifimac');
 
     // Display the values with their respective labels in the HTML element
     var displayParamsElement = document.getElementById('displayParams');
@@ -84,6 +85,12 @@
       displayParamsElement.innerHTML += 'UDID: ' + udidValue + '<br>';
     } else {
       displayParamsElement.innerHTML += 'UDID: No UDID parameter found<br>';
+    }
+
+    if (wifiMacValue) {
+      displayParamsElement.innerHTML += 'Wi-Fi MAC: ' + wifiMacValue + '<br>';
+    } else {
+      displayParamsElement.innerHTML += 'Wi-Fi MAC: No Wi-Fi MAC parameter found<br>';
     }
   </script>
 </body>
