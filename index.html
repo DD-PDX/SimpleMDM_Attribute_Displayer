@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Display Query String Parameter</title>
+  <title>Display Serial Number</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -12,10 +12,10 @@
   </style>
 </head>
 <body>
-  <div id="displayParam"></div>
+  <div id="displaySerialNum"></div>
 
   <script>
-    // Function to get query string parameter
+    // Function to get query string parameter by name
     function getParameterByName(name, url) {
       if (!url) url = window.location.href;
       name = name.replace(/[\[\]]/g, '\\$&');
@@ -26,15 +26,15 @@
       return decodeURIComponent(results[2].replace(/\+/g, ' '));
     }
 
-    // Get the 'param' value from the query string
-    var paramValue = getParameterByName('param');
+    // Get the 'serialnum' value from the query string
+    var serialNumValue = getParameterByName('serialnum');
 
-    // Display 'Serial: ' along with the 'param' value in the HTML element
-    var displayParamElement = document.getElementById('displayParam');
-    if (paramValue) {
-      displayParamElement.textContent = 'Serial: ' + paramValue;
+    // Display the 'serialnum' value in the HTML element
+    var displaySerialNumElement = document.getElementById('displaySerialNum');
+    if (serialNumValue) {
+      displaySerialNumElement.textContent = 'Serial Number: ' + serialNumValue;
     } else {
-      displayParamElement.textContent = 'Serial: No query string parameter found';
+      displaySerialNumElement.textContent = 'Serial Number: No serial number parameter found';
     }
   </script>
 </body>
