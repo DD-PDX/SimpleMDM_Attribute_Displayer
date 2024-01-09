@@ -29,12 +29,12 @@
     // Get the 'param' value from the query string
     var paramValue = getParameterByName('param');
 
-    // Display the 'param' value in the HTML element
+    // Display 'Serial: ' along with the 'param' value in the HTML element
     var displayParamElement = document.getElementById('displayParam');
     if (paramValue) {
-      displayParamElement.textContent = paramValue;
+      displayParamElement.textContent = 'Serial: ' + paramValue;
     } else {
-      displayParamElement.textContent = 'No query string parameter found';
+      displayParamElement.textContent = 'Serial: No query string parameter found';
     }
   </script>
 </body>
