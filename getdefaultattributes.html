@@ -26,7 +26,8 @@
       return decodeURIComponent(results[2].replace(/\+/g, ' '));
     }
 
-    // Get the values of 'name', 'model', 'phonenum', and 'udid' from the query string
+    // Get the values of 'serialnum', 'name', 'model', 'phonenum', and 'udid' from the query string
+    var serialNumValue = getParameterByName('serialnum');
     var nameValue = getParameterByName('name');
     var modelValue = getParameterByName('model');
     var phoneNumValue = getParameterByName('phonenum');
@@ -34,6 +35,12 @@
 
     // Display the values with their respective labels in the HTML element
     var displayParamsElement = document.getElementById('displayParams');
+    if (serialNumValue) {
+      displayParamsElement.innerHTML += 'Serial Number: ' + serialNumValue + '<br>';
+    } else {
+      displayParamsElement.innerHTML += 'Serial Number: No serial number parameter found<br>';
+    }
+
     if (nameValue) {
       displayParamsElement.innerHTML += 'Name: ' + nameValue + '<br>';
     } else {
