@@ -28,8 +28,6 @@ The attributes are embedded into the Web Clip as parameters.  A script in the HT
 - Serial Only: https://htmlpreview.github.io/?https://raw.githubusercontent.com/DD-PDX/SimpleMDM_Attribute_Displayer/main/getserial.html?serialnum={{serial_number}}
 - Default Attributes: https://htmlpreview.github.io/?https://raw.githubusercontent.com/DD-PDX/SimpleMDM_Attribute_Displayer/main/getdefaultattributes.html?serialnum={{serial_number}}&name={{device_name}}&model={{model}}&phonenum={{phone_number}}&udid={{udid}}
 
-Default Attributes: 
-
 ## Alternate Instructions
 
 1. Upload the included mobileconfig profile(s) to SimpleMDM as custom profiles **with attribute support enabled**.
