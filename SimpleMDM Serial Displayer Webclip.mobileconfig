@@ -19327,13 +19327,13 @@
 	<key>PayloadDisplayName</key>
 	<string>SimpleMDM Serial Displayer Webclip</string>
 	<key>PayloadIdentifier</key>
-	<string>com.davincid.simplemdmdisplayerwebclip</string>
+	<string>com.davincid.simplemdmserialdisplayerwebclip</string>
 	<key>PayloadOrganization</key>
 	<string>DaVinci Digital</string>
 	<key>PayloadType</key>
 	<string>Configuration</string>
 	<key>PayloadUUID</key>
-	<string>97D4EFC1-C6BB-4237-9161-4789376B6874</string>
+	<string>3DF080E3-202A-45F2-8F63-36C2230CCD42</string>
 	<key>PayloadVersion</key>
 	<integer>1</integer>
 </dict>
