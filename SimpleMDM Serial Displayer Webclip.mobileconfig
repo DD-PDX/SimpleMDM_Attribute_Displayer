@@ -5,8 +5,6 @@
 	<key>PayloadContent</key>
 	<array>
 		<dict>
-			<key>FullScreen</key>
-			<true/>
 			<key>Icon</key>
 			<data>
 			iVBORw0KGgoAAAANSUhEUgAABAAAAAQACAYAAAB/HSuDAAAAAXNS
@@ -19317,15 +19315,15 @@
 			<key>PayloadType</key>
 			<string>com.apple.webClip.managed</string>
 			<key>PayloadUUID</key>
-			<string>29BBF803-D82A-4AD3-82CE-F180319D8EE5</string>
+			<string>71CFE3C2-E148-4D7D-A05C-0214DF686BD8</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 			<key>URL</key>
-			<string>https://htmlpreview.github.io/?https://raw.githubusercontent.com/DD-PDX/SimpleMDM_Attribute_Displayer/main/index.html?param={{serial_number}}</string>
+			<string>https://htmlpreview.github.io/?https://raw.githubusercontent.com/DD-PDX/SimpleMDM_Attribute_Displayer/main/getserial.html?serialnum={{serial_number}}</string>
 		</dict>
 	</array>
 	<key>PayloadDescription</key>
-	<string>Web clip which displays the serial number of the SimpleMDM device loading the page.  https://htmlpreview.github.io/?https://raw.githubusercontent.com/DD-PDX/SimpleMDM_Attribute_Displayer/main/index.html?param={{serial_number}}</string>
+	<string>Web clip which displays the serial number of the SimpleMDM device loading the page.  https://htmlpreview.github.io/?https://raw.githubusercontent.com/DD-PDX/SimpleMDM_Attribute_Displayer/main/getserial.html?serialnum={{serial_number}}</string>
 	<key>PayloadDisplayName</key>
 	<string>SimpleMDM Serial Displayer Webclip</string>
 	<key>PayloadIdentifier</key>
@@ -19335,7 +19333,7 @@
 	<key>PayloadType</key>
 	<string>Configuration</string>
 	<key>PayloadUUID</key>
-	<string>CFFCF5B9-83F1-4600-BCC4-71B81B7892FA</string>
+	<string>97D4EFC1-C6BB-4237-9161-4789376B6874</string>
 	<key>PayloadVersion</key>
 	<integer>1</integer>
 </dict>
