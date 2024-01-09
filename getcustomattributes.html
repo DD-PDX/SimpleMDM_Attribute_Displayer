@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Display Query String Parameters</title>
+  <style>
+    body {
+      font-family: 'Courier New', monospace;
+      text-align: center;
+      margin-top: 20px;
+      font-size: 1.5em;
+    }
+  </style>
+</head>
+<body>
+  <div id="displayParams"></div>
+
+  <script>
+    // Function to get query string parameter by name
+    function getParameterByName(name, url) {
+      if (!url) url = window.location.href;
+      name = name.replace(/[\[\]]/g, '\\$&');
+      var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+          results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+
+    // Get the values of 'serialnum', 'enrolledby', 'property', 'role', 'name', 'model', 'phonenum', and 'udid' from the query string
+    var serialNumValue = getParameterByName('serialnum');
+    var enrolledByValue = getParameterByName('enrolledby');
+    var propertyValue = getParameterByName('property');
+    var roleValue = getParameterByName('role');
+    var nameValue = getParameterByName('name');
+    var modelValue = getParameterByName('model');
+    var phoneNumValue = getParameterByName('phonenum');
+    var udidValue = getParameterByName('udid');
+
+    // Display the values with their respective labels in the HTML element
+    var displayParamsElement = document.getElementById('displayParams');
+    if (serialNumValue) {
+      displayParamsElement.innerHTML += 'Serial Number: ' + serialNumValue + '<br>';
+    } else {
+      displayParamsElement.innerHTML += 'Serial Number: No serial number parameter found<br>';
+    }
+
+    if (enrolledByValue) {
+      displayParamsElement.innerHTML += 'Enrolled By: ' + enrolledByValue + '<br>';
+    } else {
+      displayParamsElement.innerHTML += 'Enrolled By: No enrolled by parameter found<br>';
+    }
+
+    if (propertyValue) {
+      displayParamsElement.innerHTML += 'Property: ' + propertyValue + '<br>';
+    } else {
+      displayParamsElement.innerHTML += 'Property: No property parameter found<br>';
+    }
+
+    if (roleValue) {
+      displayParamsElement.innerHTML += 'Role: ' + roleValue + '<br>';
+    } else {
+      displayParamsElement.innerHTML += 'Role: No role parameter found<br>';
+    }
+
+    if (nameValue) {
+      displayParamsElement.innerHTML += 'Name: ' + nameValue + '<br>';
+    } else {
+      displayParamsElement.innerHTML += 'Name: No name parameter found<br>';
+    }
+
+    if (modelValue) {
+      displayParamsElement.innerHTML += 'Model: ' + modelValue + '<br>';
+    } else {
+      displayParamsElement.innerHTML += 'Model: No model parameter found<br>';
+    }
+
+    if (phoneNumValue) {
+      displayParamsElement.innerHTML += 'Phone Number: ' + phoneNumValue + '<br>';
+    } else {
+      displayParamsElement.innerHTML += 'Phone Number: No phone number parameter found<br>';
+    }
+
+    if (udidValue) {
+      displayParamsElement.innerHTML += 'UDID: ' + udidValue + '<br>';
+    } else {
+      displayParamsElement.innerHTML += 'UDID: No UDID parameter found<br>';
+    }
+  </script>
+</body>
+</html>
