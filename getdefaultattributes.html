@@ -37,46 +37,61 @@
 
     // Display the values with their respective labels in the HTML element
     var displayParamsElement = document.getElementById('displayParams');
-    if (serialNumValue) {
-      displayParamsElement.innerHTML += 'Serial Number: ' + serialNumValue + '<br>';
+    if (
+      !serialNumValue &&
+      !simpleMDMNameValue &&
+      !nameValue &&
+      !modelValue &&
+      !phoneNumValue &&
+      !udidValue &&
+      !wifiMacValue
+    ) {
+      displayParamsElement.innerHTML +=
+        '⚠️ Error: Parameters missing. This script expects query parameters such as: ' +
+        '<br>' +
+        '?serialnum=A1B2C3D4E5&name=Clarus%20iPhone&model=iPhone18,2&phonenum=+18006927753&udid=12345678-12345678E01801E&wifimac={{44:ed:f8:8a:61:ed}}&simplemdmname=Clarus%20iPhone%20503';
     } else {
-      displayParamsElement.innerHTML += 'Serial Number: No serial number parameter found<br>';
-    }
+      if (serialNumValue) {
+        displayParamsElement.innerHTML += 'Serial Number: ' + serialNumValue + '<br>';
+      } else {
+        displayParamsElement.innerHTML += 'Serial Number: No serial number parameter found<br>';
+      }
 
-    if (simpleMDMNameValue) {
-      displayParamsElement.innerHTML += 'SimpleMDM Name: ' + simpleMDMNameValue + '<br>';
-    } else {
-      displayParamsElement.innerHTML += 'SimpleMDM Name: No SimpleMDM name parameter found<br>';
-    }
+      if (simpleMDMNameValue) {
+        displayParamsElement.innerHTML += 'SimpleMDM Name: ' + simpleMDMNameValue + '<br>';
+      } else {
+        displayParamsElement.innerHTML += 'SimpleMDM Name: No SimpleMDM name parameter found<br>';
+      }
 
-    if (nameValue) {
-      displayParamsElement.innerHTML += 'Name: ' + nameValue + '<br>';
-    } else {
-      displayParamsElement.innerHTML += 'Name: No name parameter found<br>';
-    }
+      if (nameValue) {
+        displayParamsElement.innerHTML += 'Name: ' + nameValue + '<br>';
+      } else {
+        displayParamsElement.innerHTML += 'Name: No name parameter found<br>';
+      }
 
-    if (modelValue) {
-      displayParamsElement.innerHTML += 'Model: ' + modelValue + '<br>';
-    } else {
-      displayParamsElement.innerHTML += 'Model: No model parameter found<br>';
-    }
+      if (modelValue) {
+        displayParamsElement.innerHTML += 'Model: ' + modelValue + '<br>';
+      } else {
+        displayParamsElement.innerHTML += 'Model: No model parameter found<br>';
+      }
 
-    if (phoneNumValue) {
-      displayParamsElement.innerHTML += 'Phone Number: ' + phoneNumValue + '<br>';
-    } else {
-      displayParamsElement.innerHTML += 'Phone Number: No phone number parameter found<br>';
-    }
+      if (phoneNumValue) {
+        displayParamsElement.innerHTML += 'Phone Number: ' + phoneNumValue + '<br>';
+      } else {
+        displayParamsElement.innerHTML += 'Phone Number: No phone number parameter found<br>';
+      }
 
-    if (udidValue) {
-      displayParamsElement.innerHTML += 'UDID: ' + udidValue + '<br>';
-    } else {
-      displayParamsElement.innerHTML += 'UDID: No UDID parameter found<br>';
-    }
+      if (udidValue) {
+        displayParamsElement.innerHTML += 'UDID: ' + udidValue + '<br>';
+      } else {
+        displayParamsElement.innerHTML += 'UDID: No UDID parameter found<br>';
+      }
 
-    if (wifiMacValue) {
-      displayParamsElement.innerHTML += 'Wi-Fi MAC: ' + wifiMacValue + '<br>';
-    } else {
-      displayParamsElement.innerHTML += 'Wi-Fi MAC: No Wi-Fi MAC parameter found<br>';
+      if (wifiMacValue) {
+        displayParamsElement.innerHTML += 'Wi-Fi MAC: ' + wifiMacValue + '<br>';
+      } else {
+        displayParamsElement.innerHTML += 'Wi-Fi MAC: No Wi-Fi MAC parameter found<br>';
+      }
     }
   </script>
 </body>
