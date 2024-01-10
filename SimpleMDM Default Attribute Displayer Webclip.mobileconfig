@@ -5,6 +5,8 @@
 	<key>PayloadContent</key>
 	<array>
 		<dict>
+			<key>FullScreen</key>
+			<true/>
 			<key>Icon</key>
 			<data>
 			iVBORw0KGgoAAAANSUhEUgAABAAAAAQACAYAAAB/HSuDAAAAAXNS
@@ -12643,15 +12645,15 @@
 			<key>PayloadType</key>
 			<string>com.apple.webClip.managed</string>
 			<key>PayloadUUID</key>
-			<string>16D083A2-5C5A-46AE-9700-11E7FCD395D7</string>
+			<string>0ABA8400-7F79-490F-934C-4339B6FAA70E</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 			<key>URL</key>
-			<string>https://htmlpreview.github.io/?https://raw.githubusercontent.com/DD-PDX/SimpleMDM_Attribute_Displayer/main/getdefaultattributes.html?serialnum={{serial_number}}&amp;name={{device_name}}&amp;model={{model}}&amp;phonenum={{phone_number}}&amp;udid={{udid}}</string>
+			<string>https://htmlpreview.github.io/?https://raw.githubusercontent.com/DD-PDX/SimpleMDM_Attribute_Displayer/main/getdefaultattributes.html?serialnum={{serial_number}}&amp;name={{device_name}}&amp;model={{model}}&amp;phonenum={{phone_number}}&amp;udid={{udid}}&amp;wifimac={{wifi_mac_address}}&amp;simplemdmname={{simplemdm_device_name}}</string>
 		</dict>
 	</array>
 	<key>PayloadDescription</key>
-	<string>Web clip which displays the serial number, name, model, phone number and UDID attributes of the SimpleMDM device loading the page.  https://htmlpreview.github.io/?https://raw.githubusercontent.com/DD-PDX/SimpleMDM_Attribute_Displayer/main/getdefaultattributes.html?serialnum={{serial_number}}&amp;name={{device_name}}&amp;model={{model}}&amp;phonenum={{phone_number}}&amp;udid={{udid}}</string>
+	<string>Web clip which displays the serial number, name, model, phone number and UDID attributes of the SimpleMDM device loading the page.  https://htmlpreview.github.io/?https://raw.githubusercontent.com/DD-PDX/SimpleMDM_Attribute_Displayer/main/getdefaultattributes.html?serialnum={{serial_number}}&amp;name={{device_name}}&amp;model={{model}}&amp;phonenum={{phone_number}}&amp;udid={{udid}}&amp;wifimac={{wifi_mac_address}}&amp;simplemdmname={{simplemdm_device_name}}</string>
 	<key>PayloadDisplayName</key>
 	<string>SimpleMDM Default Attribute Displayer Webclip</string>
 	<key>PayloadIdentifier</key>
@@ -12661,7 +12663,7 @@
 	<key>PayloadType</key>
 	<string>Configuration</string>
 	<key>PayloadUUID</key>
-	<string>066E05D7-1BF4-4230-93C5-432E5F3892CF</string>
+	<string>E6B0CBEA-090C-4CC6-9BF0-1BD82E566A3C</string>
 	<key>PayloadVersion</key>
 	<integer>1</integer>
 </dict>

@@ -26,7 +26,7 @@ The attributes are embedded into the Web Clip as parameters.  A script in the HT
 ### URLs
 
 - Serial Only: https://htmlpreview.github.io/?https://raw.githubusercontent.com/DD-PDX/SimpleMDM_Attribute_Displayer/main/getserial.html?serialnum={{serial_number}}
-- Default Attributes: https://htmlpreview.github.io/?https://raw.githubusercontent.com/DD-PDX/SimpleMDM_Attribute_Displayer/main/getdefaultattributes.html?serialnum={{serial_number}}&name={{device_name}}&model={{model}}&phonenum={{phone_number}}&udid={{udid}}
+- Default Attributes: https://htmlpreview.github.io/?https://raw.githubusercontent.com/DD-PDX/SimpleMDM_Attribute_Displayer/main/getdefaultattributes.html?serialnum={{serial_number}}&name={{device_name}}&model={{model}}&phonenum={{phone_number}}&udid={{udid}}&wifimac={{wifi_mac_address}}&simplemdmname={{simplemdm_device_name}}
 
 ## Alternate Instructions
 
