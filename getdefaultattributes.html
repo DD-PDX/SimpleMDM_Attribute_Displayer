@@ -46,10 +46,7 @@
       !udidValue &&
       !wifiMacValue
     ) {
-      displayParamsElement.innerHTML +=
-        '⚠️ Error: Parameters missing. This script expects query parameters such as: ' +
-        '<br>' +
-        '?serialnum=A1B2C3D4E5&name=Clarus%20iPhone&model=iPhone18,2&phonenum=+18006927753&udid=12345678-12345678E01801E&wifimac={{44:ed:f8:8a:61:ed}}&simplemdmname=Clarus%20iPhone%20503';
+      displayParamsElement.innerHTML += 'Error: Parameters Missing';
     } else {
       if (serialNumValue) {
         displayParamsElement.innerHTML += 'Serial Number: ' + serialNumValue + '<br>';
