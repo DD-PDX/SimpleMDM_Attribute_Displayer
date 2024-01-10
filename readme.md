@@ -39,4 +39,4 @@ The included web clips use [htmlpreview](https://github.com/htmlpreview/htmlprev
 
 Icons made with [Icons](https://github.com/SAP/macOS-icon-generator).
 
-The getcustomattributes.html version includes handling for the MAC address and some additional custom attributes.  A prebuilt mobileconfig is not provided here.
+The `getcustomattributes.html` version includes handling for some additional custom attributes.  A prebuilt mobileconfig is not provided here.
