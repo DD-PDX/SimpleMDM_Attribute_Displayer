@@ -20,7 +20,7 @@ The attributes are embedded into the Web Clip URL as parameters.  A script in th
 
 ## Recommended Instructions
 
-1. Create new Web Clip profile(s) in Simple MDM with the appropriate URL(s).
+1. Create new Web Clip profile(s) in SimpleMDM with the appropriate URL(s).
 2. Assign the profile(s) to devices.
 
 ### URLs
