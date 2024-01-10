@@ -1,8 +1,8 @@
 # Introduction
 
-This tool uses Web Clips and [SimpleMDM attributes](https://simplemdm.pdq.com/hc/en-us/articles/9355313240347-Attributes-Custom-Attributes) to place a shortcut to device info on the iOS or iPadOS Home Screen.
+This tool uses [Web Clips](https://support.apple.com/guide/deployment/web-clips-payload-settings-depbc7c7808/web) and [SimpleMDM attributes](https://simplemdm.pdq.com/hc/en-us/articles/9355313240347-Attributes-Custom-Attributes) to place a shortcut to device info on the iOS or iPadOS Home Screen.
 
-The attributes are embedded into the Web Clip as parameters.  A script in the HTML file then returns the attribute in large, monospace type.
+The attributes are embedded into the Web Clip URL as parameters.  A script in the HTML file then returns the attribute in large, monospace type.
 
 ## Serial Only
 
@@ -16,21 +16,21 @@ The attributes are embedded into the Web Clip as parameters.  A script in the HT
 
 ![Default Example](https://github.com/DD-PDX/SimpleMDM_Attribute_Displayer/blob/main/Images/default_attributes_example.png)
 
-# Usage
+# Demo Setup
 
 ## Recommended Instructions
 
-1. Create a new Web Clip profile in Simple MDM with the appropriate URL.
-2. Assign the profile to devices.
+1. Create new Web Clip profile(s) in Simple MDM with the appropriate URL(s).
+2. Assign the profile(s) to devices.
 
 ### URLs
 
-- Serial Only: https://htmlpreview.github.io/?https://raw.githubusercontent.com/DD-PDX/SimpleMDM_Attribute_Displayer/main/getserial.html?serialnum={{serial_number}}
-- Default Attributes: https://htmlpreview.github.io/?https://raw.githubusercontent.com/DD-PDX/SimpleMDM_Attribute_Displayer/main/getdefaultattributes.html?serialnum={{serial_number}}&name={{device_name}}&model={{model}}&phonenum={{phone_number}}&udid={{udid}}&wifimac={{wifi_mac_address}}&simplemdmname={{simplemdm_device_name}}
+- Serial Only: `https://htmlpreview.github.io/?https://raw.githubusercontent.com/DD-PDX/SimpleMDM_Attribute_Displayer/main/getserial.html?serialnum={{serial_number}}`
+- Default Attributes: `https://htmlpreview.github.io/?https://raw.githubusercontent.com/DD-PDX/SimpleMDM_Attribute_Displayer/main/getdefaultattributes.html?serialnum={{serial_number}}&name={{device_name}}&model={{model}}&phonenum={{phone_number}}&udid={{udid}}&wifimac={{wifi_mac_address}}&simplemdmname={{simplemdm_device_name}}`
 
 ## Alternate Instructions
 
-1. Upload the included mobileconfig profile(s) to SimpleMDM as custom profiles **with attribute support enabled**.
+1. Upload the included example mobileconfig profile(s) to SimpleMDM as custom profiles **with attribute support enabled**.
 2. Assign the profile(s) to devices.
 
 # More Information
