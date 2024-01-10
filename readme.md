@@ -12,7 +12,7 @@ The attributes are embedded into the Web Clip as parameters.  A script in the HT
 
 ## Default Attributes
 
-`getdefaultattributes.html` displays all default attributes when loaded using the `SimpleMDM Default Attribute Displayer Webclip.mobileconfig` on a SimpleMDM managed device.
+`getdefaultattributes.html` displays additional default attributes when loaded using the `SimpleMDM Default Attribute Displayer Webclip.mobileconfig` on a SimpleMDM managed device.
 
 ![Default Example](https://github.com/DD-PDX/SimpleMDM_Attribute_Displayer/blob/main/Images/default_attributes_example.png)
 
