@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body id="body" style="font-family: 'Courier New', monospace; text-align:
+center; margin-top: 100px;">
+
+<script>
+// Function to get parameter from URL
+function getParameterByName(name, url = window.location.href) {
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+
+// Get URL parameters and create HTML elements
+var i = 1;
+while (true) {
+    var title = getParameterByName('param' + i + 'title');
+    var value = getParameterByName('param' + i + 'value');
+    if (title === null || value === null) break;
+
+    var p = document.createElement('p');
+    p.style.fontSize = '3em';
+    p.innerHTML = title + ': ' + value;
+    document.getElementById('body').appendChild(p);
+
+    i++;
+}
+</script>
+
+</body>
+</html>
