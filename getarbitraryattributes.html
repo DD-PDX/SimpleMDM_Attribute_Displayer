@@ -4,7 +4,7 @@
 center; margin-top: 100px;">
 
 <script>
-// This is intended to display values passed as parameters in the URL.  Each value requires a title and a value in this format:
+// This is intended to display values passed as parameters in the URL.  Each line of output requires a title and a value in this format:
 //
 // http://getarbitraryattributes.html?title1=TITLE1&value1=VALUE1&title2=TITLE2&value2=VALUE2
 //
@@ -12,6 +12,8 @@ center; margin-top: 100px;">
 //
 // TITLE1: VALUE1
 // TITLE2: VALUE2
+//
+// Title and value parameters must be in sequential order, starting from 1.
 //
 // Function to get parameter from URL:
 function getParameterByName(name, url = window.location.href) {
