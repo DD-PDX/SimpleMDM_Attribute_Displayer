@@ -19,9 +19,7 @@ The attributes are embedded into the Web Clip URL as parameters.  A script in th
 
 This would display:
 
-		TITLE1: VALUE1
-
-		TITLE2: VALUE2
+![Arbitrary Example](https://github.com/DD-PDX/SimpleMDM_Attribute_Displayer/blob/main/Images/arbitrary_attributes_example.png)
 
 Title and value parameters must be in sequential order, starting from 1.  A title and a value must be included for each pair, but either value can be blank.  
 
