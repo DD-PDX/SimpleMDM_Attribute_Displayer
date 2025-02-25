@@ -15,7 +15,7 @@ center; margin-top: 100px;">
 //
 // Title and value parameters must be in sequential order, starting from 1.
 //
-// Function to get parameter from URL:
+// Function to get parameter from URL
 function getParameterByName(name, url = window.location.href) {
     name = name.replace(/[\[\]]/g, '\\$&');
     var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
@@ -34,7 +34,7 @@ while (true) {
 
     var p = document.createElement('p');
     p.style.fontSize = '3em';
-    p.innerHTML = title + ': ' + value;
+    p.innerHTML = '<strong>' + title + '</strong>: ' + value;
     document.getElementById('body').appendChild(p);
 
     i++;
