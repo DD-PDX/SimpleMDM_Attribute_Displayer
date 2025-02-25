@@ -6,8 +6,8 @@ This tool uses [Web Clips](https://support.apple.com/guide/deployment/web-clips-
 
 Terminology may vary, depending on your MDM vendor.  This tool was initially intended for SimpleMDM, which uses "attributes", so that terminology is used in most places.  Consult your MDM's documentation for instructions to embed attributes or variables in mobileconfig profiles.
 
-- [SimpleMDM attributes](https://simplemdm.pdq.com/hc/en-us/articles/9355313240347-Attributes-Custom-Attributes)
-- [Jamf Pro Variables](https://learn.jamf.com/en-US/bundle/jamf-pro-documentation-current/page/Mobile_Device_Configuration_Profiles.html)
+- [SimpleMDM attributes](https://simplemdm.pdq.com/hc/en-us/articles/9355313240347-Attributes-Custom-Attributes) in {{CurlyBrackets}}
+- [Jamf Pro Variables](https://learn.jamf.com/en-US/bundle/jamf-pro-documentation-current/page/Mobile_Device_Configuration_Profiles.html) with $DollarSigns
 
 The attributes are embedded into the Web Clip URL as parameters.  A script in the HTML file then returns the attribute in large, monospace type.
 
