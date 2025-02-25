@@ -17,8 +17,8 @@ function getParameterByName(name, url = window.location.href) {
 // Get URL parameters and create HTML elements
 var i = 1;
 while (true) {
-    var title = getParameterByName('param' + i + 'title');
-    var value = getParameterByName('param' + i + 'value');
+    var title = getParameterByName('title' + i);
+    var value = getParameterByName('value' + i);
     if (title === null || value === null) break;
 
     var p = document.createElement('p');
