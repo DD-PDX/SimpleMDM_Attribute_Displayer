@@ -15,7 +15,7 @@ The attributes are embedded into the Web Clip URL as parameters.  A script in th
 
 `getarbitraryattributes.html` displays one or more titles and values using numbered pairs of parameters identified as title# and value#, such as:
 
- 	`http://getarbitraryattributes.html?title1=TITLE1&value1=VALUE1&title2=TITLE2&value2=VALUE2`
+ 	http://getarbitraryattributes.html?title1=TITLE1&value1=VALUE1&title2=TITLE2&value2=VALUE2
 
 This would display:
 
@@ -48,10 +48,10 @@ These older versions are built to display specific variables.  They can be recre
 
 ### URLs
 
-- Several Jamf Pro Variables:
+- Several Jamf Pro Variables using arbitrary version:
 `https://htmlpreview.github.io/?https://raw.githubusercontent.com/DD-PDX/SimpleMDM_Attribute_Displayer/main/getarbitraryattributes.html?title1=Serial&value1=$SERIALNUMBER&title2=Name&value2=$DEVICENAME&title3=Asset Tag&value3=$ASSET_TAG&title4=Username&value4=$USERNAME&title5=Full Name&value5=$FULLNAME&title6=Email Address&value6=$EMAIL&title7=Phone Number&value7=$PHONE&title8=MAC Address&value8=$MACADDRESS`
-- Serial Only (SimpleMDM): `https://htmlpreview.github.io/?https://raw.githubusercontent.com/DD-PDX/SimpleMDM_Attribute_Displayer/main/getserial.html?serialnum={{serial_number}}`
-- Default Attributes(SimpleMDM): `https://htmlpreview.github.io/?https://raw.githubusercontent.com/DD-PDX/SimpleMDM_Attribute_Displayer/main/getdefaultattributes.html?serialnum={{serial_number}}&name={{device_name}}&model={{model}}&phonenum={{phone_number}}&udid={{udid}}&wifimac={{wifi_mac_address}}&simplemdmname={{simplemdm_device_name}}`
+- Old Serial Only (SimpleMDM): `https://htmlpreview.github.io/?https://raw.githubusercontent.com/DD-PDX/SimpleMDM_Attribute_Displayer/main/getserial.html?serialnum={{serial_number}}`
+- Old Default Attributes(SimpleMDM): `https://htmlpreview.github.io/?https://raw.githubusercontent.com/DD-PDX/SimpleMDM_Attribute_Displayer/main/getdefaultattributes.html?serialnum={{serial_number}}&name={{device_name}}&model={{model}}&phonenum={{phone_number}}&udid={{udid}}&wifimac={{wifi_mac_address}}&simplemdmname={{simplemdm_device_name}}`
 
 ## Alternate Instructions
 
@@ -60,8 +60,8 @@ These older versions are built to display specific variables.  They can be recre
 
 # More Information
 
-The included web clips use [htmlpreview](https://github.com/htmlpreview/htmlpreview.github.com) to render this example.  The HTML files should be able to be placed on any web server and accessed directly in production.
+The included web clips use [htmlpreview](https://github.com/htmlpreview/htmlpreview.github.com) to render this example.  The HTML files should be able to be placed on any web server and accessed directly in production.  AWS Amplify is confirmed to work.
 
-Icons made with [Icons](https://github.com/SAP/macOS-icon-generator).
+Icons made with [Icons](https://github.com/SAP/macOS-icon-generator) and [SFIcons](https://github.com/aanklewicz/SFIcons)
 
 The `getcustomattributes.html` version includes handling for some additional custom attributes.  A prebuilt mobileconfig is not provided here.
